@@ -1,0 +1,136 @@
+/*********************************************
+        Resetting Styles
+*********************************************/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/*********************************************
+        Header Styles
+*********************************************/
+
+body{
+  font-family: sans-serif, serif;
+  font-size: 20px;
+}
+
+
+/*********************************************
+        Header Styles
+*********************************************/
+
+header{
+  height: 50px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.288);
+  display: flex;
+
+ 
+}
+
+.navContainer{
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* align-content: center; */
+  margin: 0 auto;
+
+}
+
+.logo h1{
+  font-size: 1em;
+  color: #48A6E8;
+  font-weight: 500;
+  letter-spacing: .2em;
+}
+
+li{
+  display: inline;
+  margin: 0 15px;
+
+}
+
+
+a{
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #48A6E8;
+}
+
+
+/*********************************************
+        Main Styles
+*********************************************/
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 40px);
+  text-align: center;
+}
+
+.container h1{
+  background-color: #222;
+  padding: 10px 25px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+button{
+  padding: 10px 25px;
+  background-color: #fff;
+  border-radius: .5em;
+  border-color: #fff;
+  font-size: .8em;
+  text-transform: uppercase;
+
+}
+
+/*********************************************
+        Media Queries
+*********************************************/
+
+@media only screen and (max-width:708px){
+  .container h1{
+    font-size: 1.2em;
+  }
+
+  .navContainer{
+    width: 85vw;
+  }
+
+}
+
+@media only screen and (max-width:488px){
+  .container h1{
+    font-size: .8em;
+  }
+
+  header{
+    height: 80px;
+  }
+
+  li{
+    padding-bottom: 5px;
+  }
+
+  .navContainer{
+    width: 95vw;
+  }
+
+
+
+}
